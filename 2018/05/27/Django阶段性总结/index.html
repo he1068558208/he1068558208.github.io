@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 阶段总结 | Hexo</title>
+  <title>Django阶段性总结 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/阶段总结/index.html">
+  <meta name="description" content="Django阶段性总结 1、Django简介 Django是一个开放源代码的Web应用框架，由Python写成。采用了MTV的框架模式，即模型M，模板T和视图V。它最初是被开发来用于管理劳伦斯出版集团旗下的一些以新闻内容为主的网站的，即是CMS（内容管理系统）软件。并于2005年7月在BSD许可证下发布。这套框架是以比利时的吉普赛爵士吉他手Django Reinhardt来命名的。 2、Djang">
+<meta name="keywords" content="总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Django阶段性总结">
+<meta property="og:url" content="http://yoursite.com/2018/05/27/Django阶段性总结/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Django阶段性总结 1、Django简介 Django是一个开放源代码的Web应用框架，由Python写成。采用了MTV的框架模式，即模型M，模板T和视图V。它最初是被开发来用于管理劳伦斯出版集团旗下的一些以新闻内容为主的网站的，即是CMS（内容管理系统）软件。并于2005年7月在BSD许可证下发布。这套框架是以比利时的吉普赛爵士吉他手Django Reinhardt来命名的。 2、Djang">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-05-27T12:58:32.996Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Django阶段性总结">
+<meta name="twitter:description" content="Django阶段性总结 1、Django简介 Django是一个开放源代码的Web应用框架，由Python写成。采用了MTV的框架模式，即模型M，模板T和视图V。它最初是被开发来用于管理劳伦斯出版集团旗下的一些以新闻内容为主的网站的，即是CMS（内容管理系统）软件。并于2005年7月在BSD许可证下发布。这套框架是以比利时的吉普赛爵士吉他手Django Reinhardt来命名的。 2、Djang">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,60 +159,372 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Django阶段性总结" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/27/Django总结/" class="archive-article-date">
-  	<time datetime="2018-05-27T05:20:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-27</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/27/Django总结/">Django总结</a>
+    <h1 class="article-title" itemprop="name">
+      Django阶段性总结
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/05/27/Django阶段性总结/" class="archive-article-date">
+  	<time datetime="2018-05-27T05:39:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Django阶段性总结</p>
+<p><strong>1、Django简介</strong></p>
+<p>Django是一个开放源代码的Web应用框架，由Python写成。采用了MTV的框架模式，即模型M，模板T和视图V。它最初是被开发来用于管理劳伦斯出版集团旗下的一些以新闻内容为主的网站的，即是CMS（内容管理系统）软件。并于2005年7月在BSD许可证下发布。这套框架是以比利时的吉普赛爵士吉他手Django Reinhardt来命名的。</p>
+<p><strong>2、Django使用框架模式(MTV)</strong></p>
+<p><strong>M:Model</strong> –&gt; 负责数据库的CRUD，表结构的定义；</p>
+<p><strong>T:Template</strong> –&gt; 负责把渲染的页面及特定的内容展示给用户；</p>
+<p><strong>V:View</strong> –&gt; 负责业务逻辑处理，Model与Template间的桥梁。Django中还有一个url分发器，也叫作路由。主要用于将url请求发送给不同的View并进行相关的业务逻辑处理。</p>
+<p><strong>3、Django的常规操作</strong></p>
+<p>1）python -m venv hello_django_venv: 安装virtualenv(虚拟环境)（注：创建pycharm项目时需要指定虚拟环境，可以将不同版本的项目隔离开来，项目上线时要将环境和项目分离开）；</p>
+<p>2）<strong>cd envname/Scripts –&gt; activate | deactivate</strong>： 进入|退出env；</p>
+<p>3）<strong>pip install django</strong>: 安装django环境；</p>
+<p>4）pip freeze:查看Django是否安装好，以及其版本</p>
+<p>5）<strong>django-admin startproject 项目名</strong>: 创建django项目，项目文件夹名及其中的工程名一致；</p>
+<p>​      Project(工程内部文件简介)：</p>
+<p>​      <strong>init</strong>.py: 初始化，配置pymysql连接的地方</p>
+<p>​      setting.py: 配置文件，具体配置项目如下：</p>
+<p>​          – 在INSTALLED_APPS下添加包/模块，第三方库（如：rest_framework）</p>
+<p>​          – 在MIDDLEWARE添加再定义中间件(如：访问前登录),在POST提交时注意crsf中间件的存在</p>
+<p>​          – 在TEMPLATES中配置承载前端页面的templates路径，并在工程同级处创建templates文件；</p>
+<p>​          – 在DATABASES中配置数据库相关参数，同时在项目外创建相应utf8编码类型的数据库（数据库名称，用户，密码等参数需保持一致）</p>
+<p>​          – LANGUAGE_CODE：配置语言(如:zh-hans)，TIME_ZONE：配置时区 (‘Asia/Shanghai’)</p>
+<p>​          – 在STATIC_URL，STATICFILES_DIRS中配置静态文件路径，用于存放CSS、JS、IMAGE,fonts相关文件</p>
+<p>​          – MEDIA_URL、MEDIA_ROOT中配置上传文件(如:头像)的路径，使用前先转为动态(static)文件并加至路由(urlpatterns)中</p>
+<p>​          – 在REST_FRAMEWORK中配置restframework相关信息，如分页等</p>
+<p>​      urls.py: 配置路由信息，可设置命名空间namespace</p>
+<p>​      wsgi.py: 网关</p>
+<p>6）<strong>python manage.py startapp hello_app</strong>: 创建app(模块)。该命令是在工程下创建一个名为hello_app的app，并与工程同级</p>
+<p>​       app(模块内部文件简介):</p>
+<p>​           urls.py(自创): url路由，给每个请求寻找对应的方法</p>
+<p>​           admin.py: 管理后台、注册模型</p>
+<p>​           apps.py: settings.py里面注册app的时候需要使用到，一般不推荐直接使用</p>
+<p>​           models.py:存放模型的地方，定义数据库中的表结构</p>
+<p>​           views.py:写处理业务逻辑的地方</p>
+<p>7）<strong>settings</strong>     </p>
+<p>7.1）在settings.py文件中INSTALLED_APPS中写入app name</p>
+<p>​        7.2）修改databases</p>
+<p>​        7.3）修改templates – os.path.join(BASE_DIR, ‘templates’)</p>
+<p>​        7.4）设置语言 – LANGUAGE_CODE = ‘zh-hans’</p>
+<p>​        7.5）修改时区 – TIME_ZONE = ‘Asia/Shanghai’</p>
+<p>8）<strong>建立模型 –</strong> 定义的模型继承于models.Model</p>
+<p>​     A 模型字段：</p>
+<p>​       –  CharField: 字符串</p>
+<p>​       –  IntegerField: 整数</p>
+<p>​       –  FloatField: 浮点数</p>
+<p>​       –  BooleanField: 布尔类型(1,0)  </p>
+<p>​       –  DateField(auto_now_add=True/auto_now=True): 存放日期（年月日）      </p>
+<p>​                 auto_now_add=True:第一次创建数据时设置时间(1次) </p>
+<p>​                 auto_now=True:每次登录、修改操作都会更新到最新时间(多次)</p>
+<p>–  DateTimeField:年月日  时分秒</p>
+<p>​                 auto_now_add：同上</p>
+<p>​                 auto_now：同上</p>
+<p>–  AutoField: 自动增长</p>
+<p>​       –  DecimalField:  </p>
+<p>​              models.DecimalField(max_digits=3,decimal_places=1) 最大值99.9</p>
+<p>​                  max_digits: 总位数</p>
+<p>​                  decimal_places: 小数点后的位数</p>
+<p>–  TextField: 存长文本信息，页面等</p>
+<p>​       –  FileField: 文件上传字段</p>
+<p>​       –  ImageField(upload_to=’’): 上传图片</p>
+<p>​               upload_to=”xxx”:指定上传图片的路径</p>
+<p>​    </p>
+<p>B 模型参数:</p>
+<p>–  default=’xxx’:设置默认值</p>
+<p>​            null=True: 设置是否为空，针对数据库中该字段是否可以为空</p>
+<p>​            blank=True:设置是否为空，针对表单提交中该字段是否可以为空</p>
+<p>​       –  primary_key=True:创建主键</p>
+<p>​       –  unique:唯一</p>
+<p>​       –  max_length: 最大长度</p>
+<ol>
+<li>– choices,示例如下：</li>
+</ol>
+<p>在student模型中添加就读状态属性，使用choices字段使得值只能从STATUS列表中选取(注:STATUS为规定关键字，其类型只能为列表或元组,可以强制转换为字典从而采用键值对的方式进行操作)</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">Model.py</span><br><span class="line"></span><br><span class="line">STATUS =[</span><br><span class="line"></span><br><span class="line">        (<span class="string">'NONE'</span>,<span class="string">'正常'</span>),</span><br><span class="line"></span><br><span class="line">        (<span class="string">'NEXT_SCH'</span>,<span class="string">'留级'</span>),</span><br><span class="line"></span><br><span class="line">        (<span class="string">'DROP_SCH'</span>,<span class="string">'退学'</span>),</span><br><span class="line"></span><br><span class="line">        (<span class="string">'LEAVE_SCH'</span>,<span class="string">'休学'</span>)</span><br><span class="line"></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">s_status = models.CharField(choices=STATUS,max_length=<span class="number">20</span>,<span class="literal">null</span>=True)</span><br><span class="line"></span><br><span class="line">Views.py</span><br><span class="line"></span><br><span class="line">status = request.GET.<span class="built_in">get</span>(<span class="string">"status"</span>) <span class="comment"># 状态</span></span><br><span class="line"></span><br><span class="line">status_dict = dict(Student.STATUS) <span class="comment">--- &#123;‘NONE’:’正常’ ......&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> key,<span class="built_in">value</span> <span class="keyword">in</span> status_dict.<span class="keyword">items</span>():</span><br><span class="line"></span><br><span class="line">   <span class="keyword">if</span> <span class="built_in">value</span> == status:</span><br><span class="line"></span><br><span class="line">      stus = Student.objects.<span class="built_in">filter</span>(s_status=key)</span><br></pre></td></tr></table></figure>
+<p>9）<strong>加载数据库</strong></p>
+<p>   import pymysql </p>
+<p>   pymysql.install_as_MySQLdb()：当成是mysqldb一样使用，当然也可以不写这句，那就按照pymysql的方式</p>
+<p>10）<strong>数据库迁移</strong></p>
+<p>​      python manage.py makemigrations</p>
+<p>​      python manage.py migrate</p>
+<p>​      python manage.py makemigrations stu:强制找到stu模块进行迁移</p>
+<p>​      Navicat中指定数据库中的表django_migrations记录了所有迁移记录</p>
+<p>​      注:Django里面自带user – request里的user默认为AnonymousUser,其中的id,username等属性为空</p>
+<p>11）<strong>配置DEBUG</strong></p>
+<p>​    Run – Debug – Edit Configuration – + – Python – 配置Script path(manage.py) Parameters(runserver 8000) – Apply</p>
+<p>12）<strong>启动项目</strong></p>
+<p>​    python manage.py runserver <a href="默认127.0.0.1">ip:</a>端口号(默认8000端口):启动django项目，端口号可以不用写，启动的时候会默认随机创建一个可以使用的端口</p>
+<p>13）（*暂时可有可无）<strong>创建超级管理员的帐号和密码</strong></p>
+<p>python manage.py createsuperuser</p>
+<p>4、<strong>Django过滤</strong></p>
+<p><strong>科普知识：ORM(objects relational mapping) – 对象关系映射，翻译机</strong></p>
+<p>1）通过modelname.objects来实现数据的增删查改(CRUD)操作</p>
+<p>​         .all() – 获取全部信息</p>
+<p>​         .filter() – 获取指定信息(.first():获取过滤后的第一条信息，.last():… 最后一条 …</p>
+<p>​         .create() – 创建指定信息</p>
+<p>​         .get() – 只能获取一条数据，获取不到或数据有多条则会报错，不建议使用</p>
+<p>2）F()和Q()函数</p>
+<p>   F() – F()允许Django在未实际链接数据的情况下具有对数据库字段的值的引用。通常情况下我们在更新数据时需要先从数据库里将原数据取出后方在内存里，然后编辑某些属性，最后提交。</p>
+<p>例1</p>
+<p>常规操作：</p>
+<p>order = Order.objects.get(orderid=’123456789’)</p>
+<p>order.amount += 1</p>
+<p>order.save()</p>
+<p>使用F()方法：</p>
+<p>from django.db.models import F</p>
+<p> from core.models import Order</p>
+<p>order = Order.objects.get(orderid=’123456789’)</p>
+<p>order.amount = F(‘amount’) - 1</p>
+<p>order.save()</p>
+<p>例2</p>
+<p>有一张表,保存着公司员工的工资,公司普涨工资，代码如下：</p>
+<p>from django.db.models import F</p>
+<p>UserInfo.objects.filter().update(salary=F(‘salary’)+500)</p>
+<p>Q() – Q对象(django.db.models.Q)可以对关键字参数进行封装，从而更好地应用多个查询。可以组合使用 &amp;（and）,|（or），~（not）操作符，当一个操作符是用于两个Q的对象,它产生一个新的Q对象。</p>
+<p>例</p>
+<p>代码</p>
+<p>Order.objects.get(</p>
+<p>​    Q(desc__startswith=’Who’),</p>
+<p>​    Q(create_time=date(2016, 10, 2)) | Q(create_time=date(2016, 10, 6))</p>
+<p>)</p>
+<p>相应的SQL语句</p>
+<p>SELECT * from core_order WHERE desc LIKE ‘Who%’ AND (create_time = ‘2016-10-02’ OR create_time = ‘2016-10-06’)</p>
+<p>注：Q对象可以与关键字参数查询一起使用，不过一定要把Q对象放在关键字参数查询的前面</p>
+<p>例</p>
+<p>   正确写法</p>
+<p>   Order.objects.get(</p>
+<p>​    Q(create_time=date(2016, 10, 2)) | Q(create_time=date(2016, 10, 6))</p>
+<p>​    desc__startswith=’Who’,</p>
+<p>)</p>
+<p>错误写法</p>
+<p>Order.objects.get(</p>
+<p>​    desc__startswith=’Who’,</p>
+<p>​    Q(create_time=date(2016, 10, 2)) | Q(create_time=date(2016, 10, 6))</p>
+<p>)</p>
+<p><strong>5、关联</strong></p>
+<p>1） <strong>1:1 OneToOneField</strong>: 主键和外键是一对一关系，在关联表中，只能关联一个主表的id  (一般添加到扩展表，关联到主表)</p>
+<p>​    拓展表找主表 – 拓展信息对象.关联字段</p>
+<p>主表找拓展表 – 主表对象.关联表的modelname(小写)  </p>
+<p>2）1:N OneToManyField(用户、订单)</p>
+<p>​    拓展表找主表 – 拓展信息对象.关联字段</p>
+<p>​    主表找拓展表 – 主表对象.关联表的modelname(小写)_set</p>
+<p>3) N:N MangToManyField</p>
+<p>A在数据库表中的多对多,有两种方式:</p>
+<p>方式1 – 自定义第三张表</p>
+<figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="type">B2G</span>(<span class="title">models</span>.<span class="type">Model</span>):</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">    b_id = models.<span class="type">ForeignKey</span>('<span class="type">Boy</span>')</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">    g_id = models.<span class="type">ForeignKey</span>('<span class="type">Girl</span>')</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"> </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="type">Boy</span>(<span class="title">models</span>.<span class="type">Model</span>):</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">        name = models.<span class="type">CharField</span>(<span class="title">max_length</span>=16)</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"> </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="type">Girl</span>(<span class="title">models</span>.<span class="type">Model</span>):</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">    name = models.<span class="type">CharField</span>(<span class="title">max_length</span>=16)</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"> </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">方式2 –使用models中自带的<span class="type">ManytoManyField</span>自动创建第三张表</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="type">Boy</span>(<span class="title">models</span>.<span class="type">Model</span>):</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">    name = models.<span class="type">CharField</span>(<span class="title">max_length</span>=16)</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"> </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="type">Girl</span>(<span class="title">models</span>.<span class="type">Model</span>):</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">    name = models.<span class="type">CharField</span>(<span class="title">max_length</span>=16)</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">    b = models.<span class="type">ManyToManyField</span>('<span class="type">Boy</span>')</span></span><br></pre></td></tr></table></figure>
+<p>注：使用多对多自动创建后,会创建第三张表,第三张表中会将操作的前两张表中的ID做对应</p>
+<p>   B 多对多查询</p>
+<h1 id="正向查询"><a href="#正向查询" class="headerlink" title="正向查询"></a>正向查询</h1><p>#获取一个女孩对象</p>
+<p>g1 = Girl.objects.get(id=1)</p>
+<p>#获取和当前女孩有关联的所有男孩</p>
+<p>g1.b.all()  #获取全部</p>
+<p>#反向查询</p>
+<p>b1 = Boy.objects.get(id=1)</p>
+<p>b1.girl_set.all() #获取全部</p>
+<p>#连表查询</p>
+<p>#正向连表</p>
+<p>Girl.objects.all().values(‘id’,’name’,’b__username’)</p>
+<p>#反向连表</p>
+<p>Boy.objects.all().values(‘id’,’name’,’girl__name’)</p>
+<p>#注意此处为girl__name,并非girl_set__name.</p>
+<p>6、<strong>前端操作</strong></p>
+<p>​    <strong>科普知识：Jinja2 –&gt; Python下一个被广泛应用的模版引擎，他的设计思想来源于Django的模板引擎，并扩展了其语法和一系列强大的功能。其中最显著的一个是增加了沙箱执行功能和可选的自动转义功能，这对大多应用的安全性来说是非常重要的。它基于unicode并能在python2.4之后的版本运行，包括python3</strong></p>
+<p>​     过滤器（|）:在变量显示前修改</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">example:</span>  语文成绩：&#123;&#123;stu.stu_chinese | <span class="keyword">add</span>:<span class="number">10</span>&#125;&#125; -- <span class="keyword">add</span>:加法，增加值</span><br></pre></td></tr></table></figure>
+<p>时间 date:（在数据库中时间会比页面显示中少8个小时，操作时需要注意）</p>
+<p>​          Y-完整年份(四位年)    m:月</p>
+<p>​          y-简写年份(两位年）   d:日</p>
+<p>​          H-时 24小时制        m:分</p>
+<p>​          h-时 12小时制        s:秒</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">example:</span> 创建时间：&#123;&#123; stu.stu_create_time | <span class="string">date:</span><span class="string">'Y-m-d HⓂ️s'</span> &#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>​     注释</p>
+<figure class="highlight twig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="comment">&#123;# #&#125;</span><span class="xml">:单行注释(<span class="comment">&lt;!-- --&gt;</span>)</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name">comment</span> %&#125;</span><span class="xml"></span><span class="template-tag">&#123;% <span class="name">endcommet</span> %&#125;</span><span class="xml">:多行注释</span></span><br></pre></td></tr></table></figure>
+<p>​     大小写</p>
+<p>​          upper | lower</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">example : 姓名：&#123;&#123; stu.stu_name | upper&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>​              </p>
+<p>分数乘法运算</p>
+<p>​          widthratio 数 分母 分子</p>
+<p>​          example: 语文成绩乘以10：</p>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">widthratio</span></span> stu.stu_chinese 1 / 10 %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<p>​   <!-- stu.stu_chinese * 10(分子) / 1（分母）--></p>
+<p>​     整除运算</p>
+<p>​          divisibleby:2  整除2，返回True,否则返回False</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">example:</span> 数学成绩：&#123;&#123; stu.stu_math | <span class="string">divisibleby:</span><span class="number">2</span>&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>​                           <!-- 判断数学成绩是否能整除2 --></p>
+<p>​     命名空间</p>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">url</span></span> 'namespace:name' value %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<p>​ </p>
+<p>​          工程url中定义namespace</p>
+<p>​          模块url中定义name</p>
+<p>​     静态资源加载</p>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">     1）</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">     2） </span><span class="template-tag">&#123;% <span class="name"><span class="name">load</span></span> static %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">              </span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"> </span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">for</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-tag">&#123;% <span class="name"><span class="name">for</span></span> stu <span class="keyword">in</span> stus %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-tag">&#123;% <span class="name"><span class="name">empty</span></span> %&#125;</span><span class="xml">  # for中内容为空时执行的操作</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-tag">&#123;% <span class="name"><span class="name">endfor</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"> </span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">if</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> xxx %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-tag">&#123;%  <span class="name"><span class="name">else</span></span>  %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-tag">&#123;%  <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"> </span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">ifequal  --  如果相等时的操作</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-tag">&#123;% <span class="name"><span class="name">ifequal</span></span> xxx 1 %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-tag">&#123;% <span class="name"><span class="name">else</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        </span><span class="template-tag">&#123;% <span class="name"><span class="name">endifequal</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"> </span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">forloop</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        计数从0开始: </span><span class="template-variable">&#123;&#123; forloop.counter0 &#125;&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        计数从1开始: </span><span class="template-variable">&#123;&#123; forloop.counter &#125;&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        计数从最后开始，到1停: </span><span class="template-variable">&#123;&#123; forloop.revcounter &#125;&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        计数从最后开始，到0停: </span><span class="template-variable">&#123;&#123; forloop.revcounter0 &#125;&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<p><strong>7、REQUEST处理</strong></p>
+<p>​      post – 提交数据隐藏了</p>
+<p>​      get – 提交数据在url上, ?后跟参数，&amp;用来连接多个参数，但是对参数的数量有限制，每个浏览器的限制不同</p>
+<p>​      put 更新全部数据</p>
+<p>​      patch 更新局部数据</p>
+<p>​      delete:删除数据</p>
+<p>​             example:  stu_id = request.GET.get(‘stu_id’)</p>
+<p>​                      Student.objects.filter(id=stu_id).delete()</p>
+<p><strong>8、COOKIE</strong></p>
+<p>​     cookie: 随着url移动，在浏览器</p>
+<p>​     session: 在数据库</p>
+<p>​     set_cookie(key,value,seconds): 设置cookie，并为其绑定令牌，令牌有过期时间，可以设置并存放在mysql或mongodb</p>
+<p>​     1）绑定令牌到cookie里面，并将cookie存在前端</p>
+<p>​        ticket = ‘lalala’</p>
+<p>​        response = HttpResponse()</p>
+<p>​        response.set_cookie(‘ticket’,ticket)</p>
+<p>​        return response</p>
+<p>​     2）cookie存在数据库中</p>
+<p>​        user.u_ticket = ticket</p>
+<p>​        user.save()</p>
+<p>​     3）从浏览器及数据库中删除cookie</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">response = HttpResponseRedirect(<span class="string">"/shopapp/login/"</span>)</span><br><span class="line"></span><br><span class="line">   ticket = request.COOKIES.<span class="builtin-name">get</span>(<span class="string">"ticket"</span>)</span><br><span class="line"></span><br><span class="line">   response.delete_cookie(<span class="string">"ticket"</span>)</span><br><span class="line"></span><br><span class="line">   UserSession.objects.<span class="builtin-name">get</span>(<span class="attribute">session_data</span>=ticket).delete()</span><br><span class="line"></span><br><span class="line">   return response</span><br></pre></td></tr></table></figure>
+<p>9、<strong>Ajax</strong></p>
+<p>前端JS</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    csrf = $(<span class="string">'input[name="csrfmiddlewaretoken"]'</span>).val();</span><br><span class="line"></span><br><span class="line">    s_name = $(<span class="string">'#s_name'</span>).val();</span><br><span class="line"></span><br><span class="line">    s_tel = $(<span class="string">'#s_tel'</span>).val();</span><br><span class="line"></span><br><span class="line">    $.ajax(&#123;</span><br><span class="line"></span><br><span class="line">        url:<span class="string">'/stuapp/student/'</span>,</span><br><span class="line"></span><br><span class="line">        type:<span class="string">'POST'</span>,</span><br><span class="line"></span><br><span class="line">        data:&#123;<span class="string">'s_name'</span>:s_name,<span class="string">'s_tel'</span>:s_tel&#125;,  <span class="comment">//向后端传递数据，以字典的形式</span></span><br><span class="line"></span><br><span class="line">        dataType:<span class="string">'json'</span>,</span><br><span class="line"></span><br><span class="line">        headers:&#123;<span class="string">'X-CSRFToken'</span>:csrf&#125;,</span><br><span class="line"></span><br><span class="line">        success:<span class="function"><span class="keyword">function</span> (<span class="params">msg</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">            alert(<span class="string">'添加成功'</span>)  </span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">        error:<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">            alert(<span class="string">'添加失败'</span>)</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>Thank you<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">阶段总结</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/05/27/Django阶段性总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -230,9 +547,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
@@ -300,7 +617,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">阶段总结</a>
+                <a href="javascript:void(0)" class="js-tag color3">总结</a>
               </li>
             
             <div class="clearfix"></div>
